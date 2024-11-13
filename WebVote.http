@@ -1,0 +1,6 @@
+@WebVote_HostAddress = http://localhost:5174
+
+GET {{WebVote_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

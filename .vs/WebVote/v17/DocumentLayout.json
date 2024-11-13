@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\erick\\source\\Repos\\WebVote\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2A54A6C2-7195-4C36-B96C-F67B5B12A288}|WebVote.csproj|c:\\users\\erick\\source\\repos\\webvote\\controllers\\valuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A54A6C2-7195-4C36-B96C-F67B5B12A288}|WebVote.csproj|solutionrelative:controllers\\valuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A54A6C2-7195-4C36-B96C-F67B5B12A288}|WebVote.csproj|c:\\users\\erick\\source\\repos\\webvote\\entidades\\candidatosjson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A54A6C2-7195-4C36-B96C-F67B5B12A288}|WebVote.csproj|solutionrelative:entidades\\candidatosjson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A54A6C2-7195-4C36-B96C-F67B5B12A288}|WebVote.csproj|c:\\users\\erick\\source\\repos\\webvote\\controllers\\startvotecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A54A6C2-7195-4C36-B96C-F67B5B12A288}|WebVote.csproj|solutionrelative:controllers\\startvotecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ValuesController.cs",
+              "DocumentMoniker": "C:\\Users\\erick\\source\\Repos\\WebVote\\Controllers\\ValuesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ValuesController.cs",
+              "ToolTip": "C:\\Users\\erick\\source\\Repos\\WebVote\\Controllers\\ValuesController.cs",
+              "RelativeToolTip": "Controllers\\ValuesController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T01:05:45.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StartVoteController.cs",
+              "DocumentMoniker": "C:\\Users\\erick\\source\\Repos\\WebVote\\Controllers\\StartVoteController.cs",
+              "RelativeDocumentMoniker": "Controllers\\StartVoteController.cs",
+              "ToolTip": "C:\\Users\\erick\\source\\Repos\\WebVote\\Controllers\\StartVoteController.cs",
+              "RelativeToolTip": "Controllers\\StartVoteController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T00:24:02.988Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CandidatosJson.cs",
+              "DocumentMoniker": "C:\\Users\\erick\\source\\Repos\\WebVote\\Entidades\\CandidatosJson.cs",
+              "RelativeDocumentMoniker": "Entidades\\CandidatosJson.cs",
+              "ToolTip": "C:\\Users\\erick\\source\\Repos\\WebVote\\Entidades\\CandidatosJson.cs",
+              "RelativeToolTip": "Entidades\\CandidatosJson.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAIAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T00:09:41.785Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
