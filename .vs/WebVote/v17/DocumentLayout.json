@@ -1,18 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\erick\\source\\Repos\\WebVote\\",
+  "WorkspaceRootPath": "C:\\Fullsoft\\Estudos\\WebVote\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2A54A6C2-7195-4C36-B96C-F67B5B12A288}|WebVote.csproj|c:\\users\\erick\\source\\repos\\webvote\\controllers\\valuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A54A6C2-7195-4C36-B96C-F67B5B12A288}|WebVote.csproj|solutionrelative:controllers\\valuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2A54A6C2-7195-4C36-B96C-F67B5B12A288}|WebVote.csproj|c:\\fullsoft\\estudos\\webvote\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A54A6C2-7195-4C36-B96C-F67B5B12A288}|WebVote.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2A54A6C2-7195-4C36-B96C-F67B5B12A288}|WebVote.csproj|c:\\users\\erick\\source\\repos\\webvote\\entidades\\candidatosjson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A54A6C2-7195-4C36-B96C-F67B5B12A288}|WebVote.csproj|solutionrelative:entidades\\candidatosjson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2A54A6C2-7195-4C36-B96C-F67B5B12A288}|WebVote.csproj|c:\\fullsoft\\estudos\\webvote\\database\\oracledb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A54A6C2-7195-4C36-B96C-F67B5B12A288}|WebVote.csproj|solutionrelative:database\\oracledb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2A54A6C2-7195-4C36-B96C-F67B5B12A288}|WebVote.csproj|c:\\users\\erick\\source\\repos\\webvote\\controllers\\startvotecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A54A6C2-7195-4C36-B96C-F67B5B12A288}|WebVote.csproj|solutionrelative:controllers\\startvotecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2A54A6C2-7195-4C36-B96C-F67B5B12A288}|WebVote.csproj|c:\\fullsoft\\estudos\\webvote\\controllers\\reultadoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A54A6C2-7195-4C36-B96C-F67B5B12A288}|WebVote.csproj|solutionrelative:controllers\\reultadoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A54A6C2-7195-4C36-B96C-F67B5B12A288}|WebVote.csproj|c:\\fullsoft\\estudos\\webvote\\models\\responsemodelsend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A54A6C2-7195-4C36-B96C-F67B5B12A288}|WebVote.csproj|solutionrelative:models\\responsemodelsend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A54A6C2-7195-4C36-B96C-F67B5B12A288}|WebVote.csproj|c:\\fullsoft\\estudos\\webvote\\controllers\\cadastroscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A54A6C2-7195-4C36-B96C-F67B5B12A288}|WebVote.csproj|solutionrelative:controllers\\cadastroscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A54A6C2-7195-4C36-B96C-F67B5B12A288}|WebVote.csproj|c:\\fullsoft\\estudos\\webvote\\database\\manipuladorinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A54A6C2-7195-4C36-B96C-F67B5B12A288}|WebVote.csproj|solutionrelative:database\\manipuladorinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,39 +39,80 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ValuesController.cs",
-              "DocumentMoniker": "C:\\Users\\erick\\source\\Repos\\WebVote\\Controllers\\ValuesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ValuesController.cs",
-              "ToolTip": "C:\\Users\\erick\\source\\Repos\\WebVote\\Controllers\\ValuesController.cs",
-              "RelativeToolTip": "Controllers\\ValuesController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAyAAAA",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Fullsoft\\Estudos\\WebVote\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Fullsoft\\Estudos\\WebVote\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T01:05:45.223Z",
+              "WhenOpened": "2024-11-19T20:38:14.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ResponseModelSend.cs",
+              "DocumentMoniker": "C:\\Fullsoft\\Estudos\\WebVote\\Models\\ResponseModelSend.cs",
+              "RelativeDocumentMoniker": "Models\\ResponseModelSend.cs",
+              "ToolTip": "C:\\Fullsoft\\Estudos\\WebVote\\Models\\ResponseModelSend.cs",
+              "RelativeToolTip": "Models\\ResponseModelSend.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T18:54:42.243Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "StartVoteController.cs",
-              "DocumentMoniker": "C:\\Users\\erick\\source\\Repos\\WebVote\\Controllers\\StartVoteController.cs",
-              "RelativeDocumentMoniker": "Controllers\\StartVoteController.cs",
-              "ToolTip": "C:\\Users\\erick\\source\\Repos\\WebVote\\Controllers\\StartVoteController.cs",
-              "RelativeToolTip": "Controllers\\StartVoteController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAsAAAA",
+              "Title": "ReultadosController.cs",
+              "DocumentMoniker": "C:\\Fullsoft\\Estudos\\WebVote\\Controllers\\ReultadosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ReultadosController.cs",
+              "ToolTip": "C:\\Fullsoft\\Estudos\\WebVote\\Controllers\\ReultadosController.cs",
+              "RelativeToolTip": "Controllers\\ReultadosController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T00:24:02.988Z"
+              "WhenOpened": "2024-11-19T18:54:03.505Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CadastrosController.cs",
+              "DocumentMoniker": "C:\\Fullsoft\\Estudos\\WebVote\\Controllers\\CadastrosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CadastrosController.cs",
+              "ToolTip": "C:\\Fullsoft\\Estudos\\WebVote\\Controllers\\CadastrosController.cs",
+              "RelativeToolTip": "Controllers\\CadastrosController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACcAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T17:12:30.085Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CandidatosJson.cs",
-              "DocumentMoniker": "C:\\Users\\erick\\source\\Repos\\WebVote\\Entidades\\CandidatosJson.cs",
-              "RelativeDocumentMoniker": "Entidades\\CandidatosJson.cs",
-              "ToolTip": "C:\\Users\\erick\\source\\Repos\\WebVote\\Entidades\\CandidatosJson.cs",
-              "RelativeToolTip": "Entidades\\CandidatosJson.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAIAAAAXAAAA",
+              "Title": "OracleDb.cs",
+              "DocumentMoniker": "C:\\Fullsoft\\Estudos\\WebVote\\DataBase\\OracleDb.cs",
+              "RelativeDocumentMoniker": "DataBase\\OracleDb.cs",
+              "ToolTip": "C:\\Fullsoft\\Estudos\\WebVote\\DataBase\\OracleDb.cs",
+              "RelativeToolTip": "DataBase\\OracleDb.cs",
+              "ViewState": "AQIAAHkAAAAAAAAAAAAAAH0AAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T00:09:41.785Z"
+              "WhenOpened": "2024-11-19T11:56:27.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ManipuladorInfo.cs",
+              "DocumentMoniker": "C:\\Fullsoft\\Estudos\\WebVote\\DataBase\\ManipuladorInfo.cs",
+              "RelativeDocumentMoniker": "DataBase\\ManipuladorInfo.cs",
+              "ToolTip": "C:\\Fullsoft\\Estudos\\WebVote\\DataBase\\ManipuladorInfo.cs",
+              "RelativeToolTip": "DataBase\\ManipuladorInfo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T17:11:18.366Z",
+              "EditorCaption": ""
             }
           ]
         }

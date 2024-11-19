@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebVote")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+37b58ec5c90c791ecab87d44a43025b8b2eac9ae")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebVote")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebVote")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
