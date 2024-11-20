@@ -117,46 +117,75 @@ public static class OracleDb
 
         }
     }
-    public static ResponseSecoes RetornoSecoes(int zona,int secao)
+    public static ResponseSecoes RetornoSecoes(int zona, int secao)
     {
         using (OracleConnection connection = new OracleConnection(endereco_banco))
         {
             connection.Open();
+            int vostos_valido = 0;
+            int qtdepresentes = 0;
+            int totalsecoes = 0;
+            int secoesimportadas = 0;
+            int supostototal = 0;
+            float percetualPresenca = 0;
             using (OracleCommand cmd = new OracleCommand($@"
-            select s.votos_validos,
-                   sum(s.qtde_presentes) as qtdepresentes,
-                   sum(s.votos_validos) as totaleleitorespresentes,
-                   count(distinct s.id) as secoesimportadas,
-                   (select count(z.secao)
-                      from zonas z
-                     where {zona} = 0 or z.id = {zona}) as totalsecoes
-              from secoes s
+            select s.votos_validos as votosvalidos,
+                s.qtde_presentes as qtdepresentes
+              from secoes s  
              where ({secao} = 0 or s.id = {secao})
                and ({zona} = 0 or s.id_zona = {zona})
-             group by s.votos_validos", connection))
+             group by s.votos_validos,
+                   s.qtde_presentes", connection))
             {
- 
                 // Use 0 como padrão para representar "todos".
+                using (OracleDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        qtdepresentes += Convert.ToInt32(reader["qtdepresentes"]);
+                        vostos_valido += Convert.ToInt32(reader["votosvalidos"]);
+                             }
+                }
+            }
+            using (OracleCommand cmd = new OracleCommand($@"
+ select count(secao) as secaoestotais,sum(qtde_eleitores) as supostototal
+  from zonas z where ({secao} = 0 or z.secao = {secao})
+               and ({zona} = 0 or z.id = {zona})", connection))
+            {
                 using (OracleDataReader reader = cmd.ExecuteReader())
                 {
                     if (reader.Read())
                     {
-                        int eleitorespresentes = Convert.ToInt32(reader["totalEleitoresPresentes"]);
-                        int qtdepresentes = Convert.ToInt32(reader["qtdepresentes"]);
-                        float presentes = (qtdepresentes / (float)eleitorespresentes) * 100;
-                        float abstencao = 100 - presentes;
-                        return new ResponseSecoes { percentualAbstencoes = abstencao, 
-                            percentualPresentes = presentes, 
-                            secoesImportadas = Convert.ToInt32(reader["secoesImportadas"]), 
-                            totalAbstencoes = Convert.ToInt32(reader["totalEleitoresPresentes"]) - Convert.ToInt32(reader["qtdepresentes"]), 
-                            totalEleitoresPresentes = Convert.ToInt32(reader["totalEleitoresPresentes"]), 
-                            totalSecoes = Convert.ToInt32(reader["totalSecoes"]) 
-                        };
+                        totalsecoes = Convert.ToInt32(reader["secaoestotais"]);
+                        supostototal = Convert.ToInt32(reader["supostototal"]);
                     }
                 }
-                return new ResponseSecoes { percentualAbstencoes = 0, percentualPresentes = 0, secoesImportadas = 0, totalAbstencoes = 0, totalEleitoresPresentes = 0, totalSecoes = 0 };
-            }
 
+            }
+            using (OracleCommand cmd = new OracleCommand($@"
+select count(distinct id) as secaoesimportadas
+  from secoes  s  
+             where ({secao} = 0 or s.id = {secao})
+               and ({zona} = 0 or s.id_zona = {zona})", connection))
+            {
+                using (OracleDataReader reader = cmd.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        secoesimportadas = Convert.ToInt32(reader["secaoesimportadas"]);
+                    }
+                }
+            }
+            percetualPresenca = (qtdepresentes / (float)supostototal) * 100;
+            return new ResponseSecoes
+            {
+                percentualAbstencoes = 100 - percetualPresenca,
+                percentualPresentes = percetualPresenca,
+                secoesImportadas = secoesimportadas,
+                totalAbstencoes = supostototal - qtdepresentes,
+                totalEleitoresPresentes = qtdepresentes,
+                totalSecoes = totalsecoes
+            };
         }
     }
 }
