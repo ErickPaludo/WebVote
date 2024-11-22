@@ -19,10 +19,9 @@ namespace WebVote.Controllers
         }
         [Route("eleicao/resultados")]
         [HttpGet]
-        public IActionResult PostInfo([FromBody] CandidatoModelSendList candidatos)
+        public CandidatosResult PostInfo(int zonaid, int secaoid)
         {
-            if (!ModelState.IsValid) { return BadRequest(new ResponseModelSend { code = 400, message = "Estrutura do JSON esteja incorreta!" }); }
-            return Ok(new ResponseModelSend { code = 200, message = "Cadastrado com sucesso!" });
+            return OracleDb.RetornoFinal(zonaid, secaoid);
         }
     }
 }

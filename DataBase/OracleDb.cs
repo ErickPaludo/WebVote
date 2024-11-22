@@ -8,30 +8,6 @@ namespace WebVote.DataBase;
 public static class OracleDb
 {
     private static string endereco_banco = "Data Source=25.49.76.159:1521/freepdb1;User Id =vote;Password=vote;";
-
-    //public void Env(string id_r, string id_d, string mensagem)
-    //{
-    //    using (OracleConnection connection = new OracleConnection(endereco_banco))
-    //    {
-    //        try
-    //        {
-    //            connection.Open();
-    //            using (OracleCommand cmd = new OracleCommand("prc_env_msg", connection))
-    //            {
-    //                cmd.CommandType = System.Data.CommandType.StoredProcedure;
-    //                cmd.Parameters.Add("v_id_remetente", OracleDbType.Int16).Value = Convert.ToInt32(id_r);
-    //                cmd.Parameters.Add("v_id_destinatario", OracleDbType.Int16).Value = Convert.ToInt32(id_d);
-    //                cmd.Parameters.Add("v_msg", OracleDbType.Varchar2).Value = mensagem;
-    //                cmd.ExecuteNonQuery();
-    //            }
-    //        }
-    //        catch (Exception ex)
-    //        {
-
-    //        }
-    //    }
-    //}
-
     public static ResponseModelSend ImportaConfig(EleicoesModelSend model)
     {
         using (OracleConnection connection = new OracleConnection(endereco_banco))
@@ -188,4 +164,79 @@ select count(distinct id) as secaoesimportadas
             };
         }
     }
+    public static CandidatosResult RetornoFinal(int zona, int secao)
+    {
+        using (OracleConnection connection = new OracleConnection(endereco_banco))
+        {
+            connection.Open();
+            int vostos_valido = 0;
+            int quantidadeeleitores = 0;
+            int totalVotosValidos = 0;
+            int nomeCandidato = 0;
+            float percentualVotosValidos = 0;
+            float percentualVotos = 0;
+
+            using (OracleCommand cmd = new OracleCommand($@"
+             select sum(s.qtde_votos) as qtdevotos
+             from secoes s", connection))
+            {
+                // Use 0 como padrão para representar "todos".
+                using (OracleDataReader reader = cmd.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        totalVotosValidos = Convert.ToInt32(reader["qtdevotos"]);
+                    }
+                }
+            }
+
+            using (OracleCommand cmd = new OracleCommand($@"
+            select sum(distinct s.votos_validos) as votosvalidos
+            from secoes s", connection))
+            {
+                // Use 0 como padrão para representar "todos".
+                using (OracleDataReader reader = cmd.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        vostos_valido = Convert.ToInt32(reader["votosvalidos"]);
+                    }
+                }
+            }
+            using (OracleCommand cmd = new OracleCommand($@"
+            select sum(z.qtde_eleitores) as quantidadeeleitores
+            from zonas z", connection))
+            {
+                using (OracleDataReader reader = cmd.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        quantidadeeleitores = Convert.ToInt32(reader["quantidadeeleitores"]);
+                    }
+                }
+
+            }
+            List<CandidatosFinal>? candidatos = new List<CandidatosFinal>();
+            using (OracleCommand cmd = new OracleCommand($@"
+select s.candidato, sum(s.qtde_votos) as qtdevotos
+  from secoes s
+  group by s.candidato", connection))
+            {
+                using (OracleDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        candidatos.Add(new CandidatosFinal { nomeCandidato = reader["candidato"].ToString(),quantidadeVotos = Convert.ToInt32(reader["qtdevotos"]),percentualVotos = (Convert.ToInt32(reader["qtdevotos"]) / (float)quantidadeeleitores) * 100 });
+                    }
+                }
+            }
+            return new CandidatosResult
+            {
+               totalVotosValidos = totalVotosValidos,
+               percentualVotosValidos = (vostos_valido / (float)totalVotosValidos) * 100,
+               candidatos = candidatos,
+            };
+        }
+    }
+
 }
