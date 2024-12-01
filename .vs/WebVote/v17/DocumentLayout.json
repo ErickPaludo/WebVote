@@ -3,8 +3,19 @@
   "WorkspaceRootPath": "C:\\Projetos\\WebVote\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2A54A6C2-7195-4C36-B96C-F67B5B12A288}|WebVote.csproj|c:\\projetos\\webvote\\controllers\\reultadoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A54A6C2-7195-4C36-B96C-F67B5B12A288}|WebVote.csproj|solutionrelative:controllers\\reultadoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\erick\\OneDrive\\\u00C1rea de Trabalho\\start.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\erick\\OneDrive\\\u00C1rea de Trabalho\\secao1.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\erick\\OneDrive\\\u00C1rea de Trabalho\\secao2.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\erick\\OneDrive\\\u00C1rea de Trabalho\\secao4.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\erick\\OneDrive\\\u00C1rea de Trabalho\\secao3.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2A54A6C2-7195-4C36-B96C-F67B5B12A288}|WebVote.csproj|c:\\projetos\\webvote\\database\\oracledb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,20 +26,24 @@
       "RelativeMoniker": "D:0:0:{2A54A6C2-7195-4C36-B96C-F67B5B12A288}|WebVote.csproj|solutionrelative:models\\candidatosmodelsend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2A54A6C2-7195-4C36-B96C-F67B5B12A288}|WebVote.csproj|c:\\projetos\\webvote\\controllers\\cadastroscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A54A6C2-7195-4C36-B96C-F67B5B12A288}|WebVote.csproj|solutionrelative:controllers\\cadastroscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A54A6C2-7195-4C36-B96C-F67B5B12A288}|WebVote.csproj|c:\\projetos\\webvote\\models\\responsemodelsend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A54A6C2-7195-4C36-B96C-F67B5B12A288}|WebVote.csproj|solutionrelative:models\\responsemodelsend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A54A6C2-7195-4C36-B96C-F67B5B12A288}|WebVote.csproj|c:\\projetos\\webvote\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A54A6C2-7195-4C36-B96C-F67B5B12A288}|WebVote.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2A54A6C2-7195-4C36-B96C-F67B5B12A288}|WebVote.csproj|c:\\projetos\\webvote\\controllers\\reultadoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A54A6C2-7195-4C36-B96C-F67B5B12A288}|WebVote.csproj|solutionrelative:controllers\\reultadoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2A54A6C2-7195-4C36-B96C-F67B5B12A288}|WebVote.csproj|c:\\projetos\\webvote\\database\\manipuladorinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2A54A6C2-7195-4C36-B96C-F67B5B12A288}|WebVote.csproj|solutionrelative:database\\manipuladorinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A54A6C2-7195-4C36-B96C-F67B5B12A288}|WebVote.csproj|c:\\projetos\\webvote\\controllers\\cadastroscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A54A6C2-7195-4C36-B96C-F67B5B12A288}|WebVote.csproj|solutionrelative:controllers\\cadastroscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A54A6C2-7195-4C36-B96C-F67B5B12A288}|WebVote.csproj|c:\\projetos\\webvote\\models\\eleicoesmodelsend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A54A6C2-7195-4C36-B96C-F67B5B12A288}|WebVote.csproj|solutionrelative:models\\eleicoesmodelsend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A54A6C2-7195-4C36-B96C-F67B5B12A288}|WebVote.csproj|c:\\projetos\\webvote\\models\\responsemodelsend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A54A6C2-7195-4C36-B96C-F67B5B12A288}|WebVote.csproj|solutionrelative:models\\responsemodelsend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,30 +53,108 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "secao4.json",
+              "DocumentMoniker": "C:\\Users\\erick\\OneDrive\\\u00C1rea de Trabalho\\secao4.json",
+              "RelativeDocumentMoniker": "..\\..\\Users\\erick\\OneDrive\\\u00C1rea de Trabalho\\secao4.json",
+              "ToolTip": "C:\\Users\\erick\\OneDrive\\\u00C1rea de Trabalho\\secao4.json",
+              "RelativeToolTip": "..\\..\\Users\\erick\\OneDrive\\\u00C1rea de Trabalho\\secao4.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-01T19:13:35.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "secao3.json",
+              "DocumentMoniker": "C:\\Users\\erick\\OneDrive\\\u00C1rea de Trabalho\\secao3.json",
+              "RelativeDocumentMoniker": "..\\..\\Users\\erick\\OneDrive\\\u00C1rea de Trabalho\\secao3.json",
+              "ToolTip": "C:\\Users\\erick\\OneDrive\\\u00C1rea de Trabalho\\secao3.json",
+              "RelativeToolTip": "..\\..\\Users\\erick\\OneDrive\\\u00C1rea de Trabalho\\secao3.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-01T19:13:34.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "secao2.json",
+              "DocumentMoniker": "C:\\Users\\erick\\OneDrive\\\u00C1rea de Trabalho\\secao2.json",
+              "RelativeDocumentMoniker": "..\\..\\Users\\erick\\OneDrive\\\u00C1rea de Trabalho\\secao2.json",
+              "ToolTip": "C:\\Users\\erick\\OneDrive\\\u00C1rea de Trabalho\\secao2.json",
+              "RelativeToolTip": "..\\..\\Users\\erick\\OneDrive\\\u00C1rea de Trabalho\\secao2.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-01T19:13:34.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "secao1.json",
+              "DocumentMoniker": "C:\\Users\\erick\\OneDrive\\\u00C1rea de Trabalho\\secao1.json",
+              "RelativeDocumentMoniker": "..\\..\\Users\\erick\\OneDrive\\\u00C1rea de Trabalho\\secao1.json",
+              "ToolTip": "C:\\Users\\erick\\OneDrive\\\u00C1rea de Trabalho\\secao1.json",
+              "RelativeToolTip": "..\\..\\Users\\erick\\OneDrive\\\u00C1rea de Trabalho\\secao1.json",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAABMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-01T19:13:05.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "start.json",
+              "DocumentMoniker": "C:\\Users\\erick\\OneDrive\\\u00C1rea de Trabalho\\start.json",
+              "RelativeDocumentMoniker": "..\\..\\Users\\erick\\OneDrive\\\u00C1rea de Trabalho\\start.json",
+              "ToolTip": "C:\\Users\\erick\\OneDrive\\\u00C1rea de Trabalho\\start.json",
+              "RelativeToolTip": "..\\..\\Users\\erick\\OneDrive\\\u00C1rea de Trabalho\\start.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-01T19:02:26.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EleicoesModelSend.cs",
+              "DocumentMoniker": "C:\\Projetos\\WebVote\\Models\\EleicoesModelSend.cs",
+              "RelativeDocumentMoniker": "Models\\EleicoesModelSend.cs",
+              "ToolTip": "C:\\Projetos\\WebVote\\Models\\EleicoesModelSend.cs",
+              "RelativeToolTip": "Models\\EleicoesModelSend.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAkAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T18:58:48.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "ReultadosController.cs",
               "DocumentMoniker": "C:\\Projetos\\WebVote\\Controllers\\ReultadosController.cs",
               "RelativeDocumentMoniker": "Controllers\\ReultadosController.cs",
               "ToolTip": "C:\\Projetos\\WebVote\\Controllers\\ReultadosController.cs",
               "RelativeToolTip": "Controllers\\ReultadosController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAIAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-22T01:35:40.481Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "CadastrosController.cs",
               "DocumentMoniker": "C:\\Projetos\\WebVote\\Controllers\\CadastrosController.cs",
               "RelativeDocumentMoniker": "Controllers\\CadastrosController.cs",
               "ToolTip": "C:\\Projetos\\WebVote\\Controllers\\CadastrosController.cs",
               "RelativeToolTip": "Controllers\\CadastrosController.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwBQAAAANAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABLAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-18T17:12:30.085Z",
               "EditorCaption": ""
@@ -69,66 +162,54 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Projetos\\WebVote\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Projetos\\WebVote\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T20:38:14.368Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "OracleDb.cs",
               "DocumentMoniker": "C:\\Projetos\\WebVote\\DataBase\\OracleDb.cs",
               "RelativeDocumentMoniker": "DataBase\\OracleDb.cs",
               "ToolTip": "C:\\Projetos\\WebVote\\DataBase\\OracleDb.cs",
               "RelativeToolTip": "DataBase\\OracleDb.cs",
-              "ViewState": "AQIAANUAAAAAAAAAAAAgwO8AAAAEAAAA",
+              "ViewState": "AQIAAO0AAAAAAAAAAAAuwP0AAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-19T11:56:27.883Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "CandidatosModelSend.cs",
               "DocumentMoniker": "C:\\Projetos\\WebVote\\Models\\CandidatosModelSend.cs",
               "RelativeDocumentMoniker": "Models\\CandidatosModelSend.cs",
               "ToolTip": "C:\\Projetos\\WebVote\\Models\\CandidatosModelSend.cs",
               "RelativeToolTip": "Models\\CandidatosModelSend.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAqwCUAAAAQAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBAAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-20T01:38:14.574Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
               "Title": "ResponseModelSend.cs",
               "DocumentMoniker": "C:\\Projetos\\WebVote\\Models\\ResponseModelSend.cs",
               "RelativeDocumentMoniker": "Models\\ResponseModelSend.cs",
               "ToolTip": "C:\\Projetos\\WebVote\\Models\\ResponseModelSend.cs",
               "RelativeToolTip": "Models\\ResponseModelSend.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAIA4wBAAAAATAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-19T18:54:42.243Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "ManipuladorInfo.cs",
               "DocumentMoniker": "C:\\Projetos\\WebVote\\DataBase\\ManipuladorInfo.cs",
               "RelativeDocumentMoniker": "DataBase\\ManipuladorInfo.cs",
               "ToolTip": "C:\\Projetos\\WebVote\\DataBase\\ManipuladorInfo.cs",
               "RelativeToolTip": "DataBase\\ManipuladorInfo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAIAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T17:11:18.366Z"
+              "WhenOpened": "2024-11-18T17:11:18.366Z",
+              "EditorCaption": ""
             }
           ]
         }

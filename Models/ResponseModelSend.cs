@@ -9,6 +9,8 @@ namespace WebVote.Models
     }
     public class ResponseSecoes
     {
+        [JsonPropertyName("nomeEleicao")]
+        public string nomeEleicao { get; set; }
         [JsonPropertyName("totalSecoes")]
         public int totalSecoes { get; set; }
         [JsonPropertyName("secoesImportadas")]

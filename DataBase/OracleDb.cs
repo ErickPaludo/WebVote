@@ -24,7 +24,7 @@ public static class OracleDb
                     List<string> comandos = new List<string>();
                     foreach (var candidatos in model.candidatos)
                     {
-                        comandos.Add($"INSERT INTO candidatos (nome) VALUES ('{candidatos}')");
+                        comandos.Add($"INSERT INTO candidatos (nome,url) VALUES ('{candidatos.nomeCandidato}','{candidatos.urlImg}')");
                     }
 
                     comandos.Add(
@@ -104,6 +104,23 @@ public static class OracleDb
             int secoesimportadas = 0;
             int supostototal = 0;
             float percetualPresenca = 0;
+
+            string? nomeEleicao = "";
+
+            using (OracleCommand cmd = new OracleCommand($@"
+             select *
+                    from titulo_eleicao t", connection))
+            {
+                // Use 0 como padrão para representar "todos".
+                using (OracleDataReader reader = cmd.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        nomeEleicao = reader["nomeeleicao"].ToString();
+                    }
+                }
+            }
+
             using (OracleCommand cmd = new OracleCommand($@"
             select s.votos_validos as votosvalidos,
                 s.qtde_presentes as qtdepresentes
@@ -155,6 +172,7 @@ select count(distinct id) as secaoesimportadas
             percetualPresenca = (qtdepresentes / (float)supostototal) * 100;
             return new ResponseSecoes
             {
+                nomeEleicao = nomeEleicao,
                 percentualAbstencoes = 100 - percetualPresenca,
                 percentualPresentes = percetualPresenca,
                 secoesImportadas = secoesimportadas,
@@ -173,8 +191,24 @@ select count(distinct id) as secaoesimportadas
             int quantidadeeleitores = 0;
             int totalVotosValidos = 0;
             int nomeCandidato = 0;
+            string url = "";
             float percentualVotosValidos = 0;
             float percentualVotos = 0;
+            string? nomeEleicao = "";
+
+            using (OracleCommand cmd = new OracleCommand($@"
+             select *
+                    from titulo_eleicao t", connection))
+            {
+                // Use 0 como padrão para representar "todos".
+                using (OracleDataReader reader = cmd.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        nomeEleicao = reader["nomeeleicao"].ToString();
+                    }
+                }
+            }
 
             using (OracleCommand cmd = new OracleCommand($@"
              select sum(s.qtde_votos) as qtdevotos
@@ -218,20 +252,26 @@ select count(distinct id) as secaoesimportadas
             }
             List<CandidatosFinal>? candidatos = new List<CandidatosFinal>();
             using (OracleCommand cmd = new OracleCommand($@"
-select s.candidato, sum(s.qtde_votos) as qtdevotos
+select s.candidato,
+       sum(s.qtde_votos) as qtdevotos,
+       c.url as img
   from secoes s
-  group by s.candidato", connection))
+  join candidatos c
+    on s.candidato = c.nome
+ group by s.candidato,
+          c.url", connection))
             {
                 using (OracleDataReader reader = cmd.ExecuteReader())
                 {
                     while (reader.Read())
                     {
-                        candidatos.Add(new CandidatosFinal { nomeCandidato = reader["candidato"].ToString(),quantidadeVotos = Convert.ToInt32(reader["qtdevotos"]),percentualVotos = (Convert.ToInt32(reader["qtdevotos"]) / (float)quantidadeeleitores) * 100 });
+                        candidatos.Add(new CandidatosFinal { nomeCandidato = reader["candidato"].ToString(),quantidadeVotos = Convert.ToInt32(reader["qtdevotos"]),percentualVotos = (Convert.ToInt32(reader["qtdevotos"]) / (float)quantidadeeleitores) * 100 ,urlImg = reader["img"].ToString() });
                     }
                 }
             }
             return new CandidatosResult
             {
+               nomeEleicao = nomeEleicao,
                totalVotosValidos = totalVotosValidos,
                percentualVotosValidos = (vostos_valido / (float)totalVotosValidos) * 100,
                candidatos = candidatos,

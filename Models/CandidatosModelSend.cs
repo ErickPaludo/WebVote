@@ -14,6 +14,17 @@ public class Candidatos
     public string? nomeCandidato { get; set; }
     [JsonPropertyName("quantidadeVotos")]
     public int quantidadeVotos { get; set; }
+    [JsonPropertyName("urlImg")]
+    public string? urlImg { get; set; }
+}
+
+public class CadCandidato
+{
+    [JsonPropertyName("nomeCandidato")]
+    public string? nomeCandidato { get; set; }
+    [JsonPropertyName("urlImg")]
+    public string? urlImg { get; set; }
+
 }
 
 public class CandidatoModelSendList
@@ -32,6 +43,8 @@ public class CandidatoModelSendList
 
 public class CandidatosResult
 {
+    [JsonPropertyName("nomeEleicao")]
+    public string nomeEleicao { get; set; }
     [JsonPropertyName("totalVotosValidos")]
     public int totalVotosValidos { get; set; }
     [JsonPropertyName("totalVopercentualVotosValidostosValidos")]

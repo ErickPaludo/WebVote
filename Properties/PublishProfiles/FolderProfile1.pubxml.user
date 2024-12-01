@@ -5,7 +5,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project>
   <PropertyGroup>
     <_PublishTargetUrl>\\25.49.76.159\apifacul</_PublishTargetUrl>
-    <History>True|2024-11-22T02:15:45.1729783Z||;</History>
+    <History>True|2024-12-01T19:15:34.9549453Z||;True|2024-12-01T15:43:37.7611616-03:00||;True|2024-11-21T23:15:45.1729783-03:00||;</History>
     <LastFailureDetails />
   </PropertyGroup>
 </Project>
