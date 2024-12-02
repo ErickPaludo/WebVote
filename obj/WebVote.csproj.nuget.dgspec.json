@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projetos\\WebVote\\WebVote.csproj": {}
+    "C:\\Users\\erick\\OneDrive\\Área de Trabalho\\WebVote\\WebVote\\WebVote.csproj": {}
   },
   "projects": {
-    "C:\\Projetos\\WebVote\\WebVote.csproj": {
+    "C:\\Users\\erick\\OneDrive\\Área de Trabalho\\WebVote\\WebVote\\WebVote.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\WebVote\\WebVote.csproj",
+        "projectUniqueName": "C:\\Users\\erick\\OneDrive\\Área de Trabalho\\WebVote\\WebVote\\WebVote.csproj",
         "projectName": "WebVote",
-        "projectPath": "C:\\Projetos\\WebVote\\WebVote.csproj",
+        "projectPath": "C:\\Users\\erick\\OneDrive\\Área de Trabalho\\WebVote\\WebVote\\WebVote.csproj",
         "packagesPath": "C:\\Users\\erick\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\WebVote\\obj\\",
+        "outputPath": "C:\\Users\\erick\\OneDrive\\Área de Trabalho\\WebVote\\WebVote\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

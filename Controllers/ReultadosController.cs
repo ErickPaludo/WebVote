@@ -12,16 +12,30 @@ namespace WebVote.Controllers
     {
         [Route("eleicao/importacoes-secoes")]
         [HttpGet]
-        public ResponseSecoes PostInicial(int zonaid, int secaoid)
+        public IActionResult PostInicial(int zonaid, int secaoid)
         {
-           // if (!ModelState.IsValid) { return BadRequest(new ResponseModelSend { code = 400, message = "Estrutura do JSON esteja incorreta!" }); }
-            return OracleDb.RetornoSecoes(zonaid, secaoid);
+            var obj = OracleDb.RetornoSecoes(zonaid, secaoid) ;
+            if (!string.IsNullOrEmpty(obj.nomeEleicao))
+            {
+                return Ok(obj);
+            }
+            {
+                return BadRequest(new ResponseModelSend { code = 400, message = "Nenhuma seção encontrada!" });
+            }
         }
         [Route("eleicao/resultados")]
         [HttpGet]
-        public CandidatosResult PostInfo(int zonaid, int secaoid)
+        public IActionResult PostInfo(int zonaid, int secaoid)
         {
-            return OracleDb.RetornoFinal(zonaid, secaoid);
+            var obj = OracleDb.RetornoFinal(zonaid, secaoid);
+            if (!string.IsNullOrEmpty(obj.nomeEleicao))
+            {
+                return Ok(obj);
+            }
+            else
+            {
+                return BadRequest(new ResponseModelSend { code = 400, message = "Nenhuma eleição cadastrado!" });
+            }
         }
     }
 }

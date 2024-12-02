@@ -114,3 +114,45 @@ C:\Projetos\WebVote\obj\Debug\net8.0\refint\WebVote.dll
 C:\Projetos\WebVote\obj\Debug\net8.0\WebVote.pdb
 C:\Projetos\WebVote\obj\Debug\net8.0\WebVote.genruntimeconfig.cache
 C:\Projetos\WebVote\obj\Debug\net8.0\ref\WebVote.dll
+C:\Users\erick\OneDrive\Área de Trabalho\WebVote\WebVote\obj\Debug\net8.0\WebVote.csproj.AssemblyReference.cache
+C:\Users\erick\OneDrive\Área de Trabalho\WebVote\WebVote\obj\Debug\net8.0\WebVote.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\erick\OneDrive\Área de Trabalho\WebVote\WebVote\obj\Debug\net8.0\WebVote.AssemblyInfoInputs.cache
+C:\Users\erick\OneDrive\Área de Trabalho\WebVote\WebVote\obj\Debug\net8.0\WebVote.AssemblyInfo.cs
+C:\Users\erick\OneDrive\Área de Trabalho\WebVote\WebVote\obj\Debug\net8.0\WebVote.csproj.CoreCompileInputs.cache
+C:\Users\erick\OneDrive\Área de Trabalho\WebVote\WebVote\obj\Debug\net8.0\WebVote.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\erick\OneDrive\Área de Trabalho\WebVote\WebVote\obj\Debug\net8.0\WebVote.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\erick\OneDrive\Área de Trabalho\WebVote\WebVote\obj\Debug\net8.0\WebVote.sourcelink.json
+C:\Users\erick\OneDrive\Área de Trabalho\WebVote\WebVote\obj\Debug\net8.0\WebVote.dll
+C:\Users\erick\OneDrive\Área de Trabalho\WebVote\WebVote\obj\Debug\net8.0\refint\WebVote.dll
+C:\Users\erick\OneDrive\Área de Trabalho\WebVote\WebVote\obj\Debug\net8.0\WebVote.pdb
+C:\Users\erick\OneDrive\Área de Trabalho\WebVote\WebVote\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\erick\OneDrive\Área de Trabalho\WebVote\WebVote\bin\Debug\net8.0\appsettings.json
+C:\Users\erick\OneDrive\Área de Trabalho\WebVote\WebVote\bin\Debug\net8.0\WebVote.exe
+C:\Users\erick\OneDrive\Área de Trabalho\WebVote\WebVote\bin\Debug\net8.0\WebVote.deps.json
+C:\Users\erick\OneDrive\Área de Trabalho\WebVote\WebVote\bin\Debug\net8.0\WebVote.runtimeconfig.json
+C:\Users\erick\OneDrive\Área de Trabalho\WebVote\WebVote\bin\Debug\net8.0\WebVote.dll
+C:\Users\erick\OneDrive\Área de Trabalho\WebVote\WebVote\bin\Debug\net8.0\WebVote.pdb
+C:\Users\erick\OneDrive\Área de Trabalho\WebVote\WebVote\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\erick\OneDrive\Área de Trabalho\WebVote\WebVote\bin\Debug\net8.0\Oracle.ManagedDataAccess.dll
+C:\Users\erick\OneDrive\Área de Trabalho\WebVote\WebVote\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\erick\OneDrive\Área de Trabalho\WebVote\WebVote\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\erick\OneDrive\Área de Trabalho\WebVote\WebVote\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\erick\OneDrive\Área de Trabalho\WebVote\WebVote\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\erick\OneDrive\Área de Trabalho\WebVote\WebVote\bin\Debug\net8.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\erick\OneDrive\Área de Trabalho\WebVote\WebVote\bin\Debug\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\erick\OneDrive\Área de Trabalho\WebVote\WebVote\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\erick\OneDrive\Área de Trabalho\WebVote\WebVote\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\erick\OneDrive\Área de Trabalho\WebVote\WebVote\bin\Debug\net8.0\runtimes\linux\lib\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\erick\OneDrive\Área de Trabalho\WebVote\WebVote\bin\Debug\net8.0\runtimes\osx\lib\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\erick\OneDrive\Área de Trabalho\WebVote\WebVote\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\erick\OneDrive\Área de Trabalho\WebVote\WebVote\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\erick\OneDrive\Área de Trabalho\WebVote\WebVote\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\erick\OneDrive\Área de Trabalho\WebVote\WebVote\obj\Debug\net8.0\staticwebassets\msbuild.WebVote.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\erick\OneDrive\Área de Trabalho\WebVote\WebVote\obj\Debug\net8.0\staticwebassets\msbuild.build.WebVote.props
+C:\Users\erick\OneDrive\Área de Trabalho\WebVote\WebVote\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.WebVote.props
+C:\Users\erick\OneDrive\Área de Trabalho\WebVote\WebVote\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.WebVote.props
+C:\Users\erick\OneDrive\Área de Trabalho\WebVote\WebVote\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\erick\OneDrive\Área de Trabalho\WebVote\WebVote\obj\Debug\net8.0\scopedcss\bundle\WebVote.styles.css
+C:\Users\erick\OneDrive\Área de Trabalho\WebVote\WebVote\obj\Debug\net8.0\WebVote.csproj.Up2Date
+C:\Users\erick\OneDrive\Área de Trabalho\WebVote\WebVote\obj\Debug\net8.0\WebVote.genruntimeconfig.cache
+C:\Users\erick\OneDrive\Área de Trabalho\WebVote\WebVote\obj\Debug\net8.0\ref\WebVote.dll
