@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fnKFRI11JO0=",
+  "dgSpecHash": "qNXO2OTQUXs=",
   "success": true,
-  "projectFilePath": "C:\\Users\\erick\\OneDrive\\Área de Trabalho\\WebVote\\WebVote\\WebVote.csproj",
+  "projectFilePath": "C:\\Projetos\\WebVote\\WebVote.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\erick\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\erick\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

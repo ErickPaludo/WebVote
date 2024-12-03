@@ -14,9 +14,9 @@ namespace WebVote.Controllers
         [HttpPost]
         public IActionResult PostInicial([FromBody] EleicoesModelSend candidatos)
         {
-            if (!ModelState.IsValid) {return BadRequest(new ResponseModelSend { code = 400, message = "Estrutura do JSON esteja incorreta!" }); }
-           ResponseModelSend response = ManipuladorInfo.InformacoesIniciais(candidatos);
-        
+            if (!ModelState.IsValid) { return BadRequest(new ResponseModelSend { code = 400, message = "Estrutura do JSON esteja incorreta!" }); }
+            ResponseModelSend response = ManipuladorInfo.InformacoesIniciais(candidatos);
+
             if (response.code == 200)
             {
                 return Ok(response);
@@ -29,7 +29,7 @@ namespace WebVote.Controllers
         [HttpPost]
         public IActionResult PostInfo([FromBody] CandidatoModelSendList candidatos)
         {
-            if (!ModelState.IsValid) { return BadRequest(new ResponseModelSend { code = 400, message = "Estrutura do JSON esteja incorreta!" }); }
+                if (!ModelState.IsValid) { return BadRequest(new ResponseModelSend { code = 400, message = "Estrutura do JSON esteja incorreta!" }); }
             ResponseModelSend response = ManipuladorInfo.ImportaSecao(candidatos);
 
             if (response.code == 200)
@@ -38,5 +38,7 @@ namespace WebVote.Controllers
             }
             return BadRequest(response);
         }
+     
     }
+
 }

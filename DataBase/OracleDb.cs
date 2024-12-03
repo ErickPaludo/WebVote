@@ -1,5 +1,7 @@
 ﻿using Oracle.ManagedDataAccess.Client;
 using System.Collections.Generic;
+using System.Reflection;
+using System.Security.Cryptography.X509Certificates;
 using WebVote.Entidades;
 using WebVote.Models;
 
@@ -13,20 +15,7 @@ public static class OracleDb
         using (OracleConnection connection = new OracleConnection(endereco_banco))
         {
             connection.Open();
-            foreach (var zona in model.zonasEleitorais)
-            {
-                using (OracleCommand cmd = new OracleCommand($@"
-            select count(id) from zonas where id = {zona.idZona}", connection))
-                {
-                    using (OracleDataReader reader = cmd.ExecuteReader())
-                    {
-                        if (reader.Read())
-                        {
-                            return new ResponseModelSend { code = 400, message = $"Zona {zona.idZona} já inserida!" };
-                        }
-                    }
-                }
-            }
+
             using (OracleTransaction transaction = connection.BeginTransaction())
             using (OracleCommand cmd = new OracleCommand())
             {
@@ -76,7 +65,7 @@ public static class OracleDb
             connection.Open();
 
             using (OracleCommand cmd = new OracleCommand($@"
-            select count(secao) as existesecao from zonas where id = {(model.idZona.Equals("string") ? "0" : model.idZona)} and secao = {model.idSecao}", connection))
+            select secao as existesecao from zonas where id = {(model.idZona.Equals("string") ? "0" : model.idZona)} and secao = {model.idSecao}", connection))
             {
                 using (OracleDataReader reader = cmd.ExecuteReader())
                 {
@@ -91,13 +80,16 @@ public static class OracleDb
             }
 
             using (OracleCommand cmd = new OracleCommand($@"
-            select count(distinct id) from secoes where id = {model.idSecao} and id_zona = {model.idZona}", connection))
+            select count(distinct id) as ovo from secoes where id = {model.idSecao} and id_zona = {model.idZona}", connection))
             {
                 using (OracleDataReader reader = cmd.ExecuteReader())
                 {
                     if (reader.Read())
                     {
-                        return new ResponseModelSend { code = 400, message = $"Seção já cadastrada!" };
+                        if (Convert.ToInt32(reader["ovo"]) > 0)
+                        {
+                            return new ResponseModelSend { code = 400, message = $"Seção já cadastrada!" };
+                        }
                     }
                 }
             }
@@ -332,6 +324,35 @@ select s.candidato,
                 return new CandidatosResult();
             }
         }
+        
     }
+    public static void DeleteAll()
+    {
+        using (OracleConnection connection = new OracleConnection(endereco_banco))
+        {
+            connection.Open();
 
+            using (OracleTransaction transaction = connection.BeginTransaction())
+            using (OracleCommand cmd = new OracleCommand())
+            {            
+                    cmd.Connection = connection;
+                    cmd.Transaction = transaction;
+
+                    List<string> comandos = new List<string>();
+                  
+                    comandos.Add($"delete from titulo_eleicao");      
+                    comandos.Add($"delete from candidatos");             
+                    comandos.Add($"delete from zonas");
+                    comandos.Add($"delete from secoes");
+              
+                    foreach (var comando in comandos)
+                    {
+                        cmd.CommandText = comando;
+                        cmd.ExecuteNonQuery();
+                    }
+                    transaction.Commit();
+            }
+
+        }
+    }
 }
