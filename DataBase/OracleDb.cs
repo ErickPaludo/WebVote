@@ -1,6 +1,7 @@
 ﻿using Oracle.ManagedDataAccess.Client;
 using System.Collections.Generic;
 using System.Reflection;
+using System.Reflection.PortableExecutable;
 using System.Security.Cryptography.X509Certificates;
 using WebVote.Entidades;
 using WebVote.Models;
@@ -37,6 +38,17 @@ public static class OracleDb
                     {
                         foreach (var secao in zonas.secoes)
                         {
+                            using (OracleCommand cmd2 = new OracleCommand($@"
+            select id as existezona from zonas where id = {zonas.idZona}", connection))
+                            {
+                                using (OracleDataReader reader2 = cmd2.ExecuteReader())
+                                {
+                                    if (reader2.Read())
+                                    {
+                                        return new ResponseModelSend { code = 400, message = $"Zona já foi cadastrada!" };
+                                    }
+                                }
+                            }
                             comandos.Add($"insert into zonas(id, secao, qtde_eleitores) values({zonas.idZona}, {secao.idSecao}, {secao.quantidadeEleitoresZona})");
                         }
                     }
